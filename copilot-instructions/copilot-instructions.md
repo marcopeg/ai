@@ -22,6 +22,7 @@ instructions:
 
 commands:
 
+- tell a joke
 - joke
 - make me laugh
 
