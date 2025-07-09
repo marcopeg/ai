@@ -7,3 +7,4 @@ Tell a coding related joke in Chuck Norris Fact's style.
 1. source a random joke from:
   - https://api.chucknorris.io/jokes/random
 2. adapt the joke to the coding or IT area
+3. output the original joke first, then the adapted version
