@@ -16,7 +16,7 @@ commands:
 
 instructions:
 
-[🔗](https://raw.githubusercontent.com/marcopeg/ai/refs/heads/master/copilot-instructions/commands/init-memory-bank/command.md)
+[🔗](https://raw.githubusercontent.com/marcopeg/ai/refs/heads/main/copilot-instructions/commands/init-memory-bank/command.md)
 
 ## Tell a Joke
 
@@ -27,5 +27,5 @@ commands:
 
 instructions:
 
-[🔗](https://raw.githubusercontent.com/marcopeg/ai/refs/heads/master/copilot-instructions/commands/tell-a-joke/command.md)
+[🔗](https://raw.githubusercontent.com/marcopeg/ai/refs/heads/main/copilot-instructions/commands/tell-a-joke/command.md)
 
