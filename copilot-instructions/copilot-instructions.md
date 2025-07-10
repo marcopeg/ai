@@ -338,6 +338,45 @@ action: Archive the tasks with IDs `aaa`, `aab`, and `aac` from the backlog.
 
 **NOTE:** this task is complete only when the `./docs/backlog/BACKLOG.md` file is updated with the new links to the archived tasks.
 
+## Initialize Memory Bank
+
+> model: gpt
+
+**Goal:** Initialize or complete the Memory Bank files with the current project context and architecture.
+
+**Triggers:**
+
+- initialize memory bank
+- init memory bank
+- initialize docs
+- init docs
+
+**Instructions:**
+
+1. Check the current state of the `./docs/` folder
+2. Match the existing files with the expected structure:
+   - `./docs/memory-bank/ARCHITECTURE.md`
+   - `./docs/memory-bank/FEATURES.md`
+   - `./docs/memory-bank/DEPENDENCIES.md`
+   - `./docs/backlog/BACKLOG.md`
+   - `./docs/backlog/tasks/`
+   - `./docs/backlog/archive/`
+   - `./docs/articles/`
+3. If the `BACKLOG.md` file was missing, **create** a first `aaa` taks with title "first task"
+4. Analize the current codebase and the existing files to fill in the missing information in the Memory Bank files:
+   - `ARCHITECTURE.md`: summarize the project architecture, technology stack, and best practices focusing on the sections:
+        - `# Architecture`
+        - `# Technology Stack`
+        - `# Coding Style`
+        - `# Best Practices`
+   - `FEATURES.md`: list the main features of the project from a business perspective, for each dependency add:
+        - `## {name}`
+        - Brief description that targets LLMs (why it is used, what it does, how it is used)
+        - Link to the documentation (favor Context7 links where available)
+   - `DEPENDENCIES.md`: list the dependencies used in the project with brief descriptions and links to documentation
+
+**IMPORTANT:** Double check that a first tast (`aaa`) is created in the backlog, and that the Memory Bank files are updated with the current project context.
+
 ## Help
 
 > model: gpt
@@ -347,7 +386,7 @@ When prompted by `help` or `h` output a simple table of the available commands a
 The order of the commands is:
 
 - Working: k0, k1, k2, k3
-- IDE: k7, k8, k9, h
+- IDE: k7, k8, k9, init, h
 
 Produce 2 separated tables to maximize readability.
 Include the suggested model.
